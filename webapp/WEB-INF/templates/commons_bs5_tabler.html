@@ -6,6 +6,7 @@
 <#-- Information about this commons file -->
 <#macro commonsFile>commons_bs5_tabler.html</#macro>
 <#macro commonsName>Commons Bootstrap 5 + Tabler 1.0</#macro>
+<#macro commonsPreview>themes/admin/tabler/images/preview.png</#macro>
 <#macro commonsDescription>Freemarker Commons macros powered by Bootstrap CSS Framework 5 + Tabler 1</#macro>
 <#-- Path               -->
 <#assign commonsJsPath='js/' /> 
@@ -66,6 +67,7 @@
 <#include "${commonsFtlPath}pages/header/adminAccessibilityMode.ftl" />
 <#include "${commonsFtlPath}pages/header/adminSiteColumnOutline.ftl" />
 <#include "${commonsFtlPath}pages/header/adminSiteToolbar.ftl" />
+<#include "${commonsFtlPath}pages/header/adminSkipNav.ftl" />
 <#-- Footer -->
 <#include "${commonsFtlPath}pages/footer/adminFooter.ftl" />
 <#-- Home -->
@@ -196,6 +198,7 @@
 <#include "${commonsFtlPath}layout/columns/columns.ftl" />
 <#include "${commonsFtlPath}layout/page/pageContainer.ftl" />
 <#include "${commonsFtlPath}layout/page/pageColumn.ftl" />
+<#include "${commonsFtlPath}layout/page/pageColumnBtn.ftl" />
 <#include "${commonsFtlPath}layout/page/pageHeader.ftl" />
 <#include "${commonsFtlPath}layout/page/pageRow.ftl" />
 <#include "${commonsFtlPath}layout/page/pageWrapper.ftl" />

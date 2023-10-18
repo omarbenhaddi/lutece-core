@@ -6,7 +6,7 @@ export class BackportTemplateStyle {
         document.addEventListener('DOMContentLoaded', () => {
             this.backportTemplateStyle();
         });
-    }
+    }    
     backportTemplateStyle() {
         const tables = document.querySelectorAll('table');
         tables.forEach(table => {
@@ -18,8 +18,8 @@ export class BackportTemplateStyle {
                 });
             });
         });
-        const page = document.getElementById('corporate-page');
-        if (!page) {
+        const lutecePage = document.querySelector('.lutece-page');
+        if( !lutecePage ) {
             const lutecePageWrappers = document.querySelectorAll('.lutece-page-wrapper');
             lutecePageWrappers.forEach(wrapper => {
                 if (!wrapper.querySelector('main')) {
@@ -27,6 +27,25 @@ export class BackportTemplateStyle {
                 }
             });
         }
+        this.adjustPageHeight();
+        window.addEventListener('resize', this.adjustPageHeight.bind(this));
+        const columns = document.querySelectorAll('.lutece-page > .lutece-column');
+
+        document.addEventListener('shown.bs.offcanvas', () => {
+            columns && columns.forEach(column => {
+                column.classList.add("overflow-hidden");
+                lutecePage && lutecePage.classList.add("overflow-hidden");
+            })
+            window.dispatchEvent(new Event('resize'));
+        })
+
+        document.addEventListener('hidden.bs.offcanvas', () => {
+            columns && columns.forEach(column => {
+                column.classList.remove("overflow-hidden");
+                lutecePage && lutecePage.classList.remove("overflow-hidden");
+            })
+            window.dispatchEvent(new Event('resize'));
+        })
         document.querySelectorAll('[data-toggle="modal"]').forEach(element => {
             element.setAttribute('data-bs-toggle', 'modal');
             element.setAttribute('data-bs-target', element.getAttribute('data-target'));
@@ -55,5 +74,16 @@ export class BackportTemplateStyle {
         document.querySelectorAll(".modal").forEach((e => {
             document.body.appendChild(e)
         }))
+    }
+    adjustPageHeight() {
+        const lutecePage = document.querySelector('.lutece-page');
+        const luteceColumns = document.querySelectorAll('.lutece-column');
+        this.adjustElementHeight(lutecePage);
+        luteceColumns && luteceColumns.forEach((col) => this.adjustElementHeight(col));
+    }
+    adjustElementHeight(element) {
+        const elementHeight = window.innerHeight - element.getBoundingClientRect().top;
+        element.style.maxHeight = `${elementHeight}px`;
+        element.style.height = `${elementHeight}px`;
     }
 }

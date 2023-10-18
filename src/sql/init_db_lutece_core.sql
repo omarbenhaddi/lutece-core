@@ -5,47 +5,47 @@ INSERT INTO core_admin_dashboard(dashboard_name, dashboard_column, dashboard_ord
 INSERT INTO core_admin_dashboard(dashboard_name, dashboard_column, dashboard_order) VALUES('featuresAdminDashboardComponent', 1, 5);
 INSERT INTO core_admin_dashboard(dashboard_name, dashboard_column, dashboard_order) VALUES('xslExportAdminDashboardComponent', 1, 6);
 
-INSERT INTO core_admin_right VALUES ('CORE_ADMIN_SITE','portal.site.adminFeature.admin_site.name',2,'jsp/admin/site/AdminSite.jsp','portal.site.adminFeature.admin_site.description',1,NULL,'SITE','images/admin/skin/features/admin_site.png','jsp/admin/documentation/AdminDocumentation.jsp?doc=admin-site',1, 0);
-INSERT INTO core_admin_right VALUES ('CORE_CACHE_MANAGEMENT','portal.system.adminFeature.cache_management.name',0,'jsp/admin/system/ManageCaches.jsp','portal.system.adminFeature.cache_management.description',1,NULL,'SYSTEM','images/admin/skin/features/manage_caches.png',NULL,1, 0);
-INSERT INTO core_admin_right VALUES ('CORE_SEARCH_INDEXATION','portal.search.adminFeature.indexer.name',0,'jsp/admin/search/ManageSearchIndexation.jsp','portal.search.adminFeature.indexer.description',0,NULL,'SYSTEM',NULL,NULL,2, 0);
-INSERT INTO core_admin_right VALUES ('CORE_SEARCH_MANAGEMENT','portal.search.adminFeature.search_management.name',0,NULL,'portal.search.adminFeature.search_management.description',0,NULL,'SYSTEM',NULL,NULL,3, 0);
-INSERT INTO core_admin_right VALUES ('CORE_LOGS_VISUALISATION','portal.system.adminFeature.logs_visualisation.name',0,'jsp/admin/system/ManageFilesSystem.jsp','portal.system.adminFeature.logs_visualisation.description',1,NULL,'SYSTEM','images/admin/skin/features/view_logs.png',NULL,4, 0);
-INSERT INTO core_admin_right VALUES ('CORE_PAGE_TEMPLATE_MANAGEMENT','portal.style.adminFeature.page_template_management.name',0,'jsp/admin/style/ManagePageTemplates.jsp','portal.style.adminFeature.page_template_management.description',0,NULL,'STYLE','images/admin/skin/features/manage_page_templates.png',NULL,2, 0);
-INSERT INTO core_admin_right VALUES ('CORE_PLUGINS_MANAGEMENT','portal.system.adminFeature.plugins_management.name',0,'jsp/admin/system/ManagePlugins.jsp','portal.system.adminFeature.plugins_management.description',1,NULL,'SYSTEM','images/admin/skin/features/manage_plugins.png',NULL,5, 0);
-INSERT INTO core_admin_right VALUES ('CORE_PROPERTIES_MANAGEMENT','portal.site.adminFeature.properties_management.name',2,'jsp/admin/ManageProperties.jsp','portal.site.adminFeature.properties_management.description',0,NULL,'SITE',NULL,'jsp/admin/documentation/AdminDocumentation.jsp?doc=admin-properties',2, 0);
-INSERT INTO core_admin_right VALUES ('CORE_STYLESHEET_MANAGEMENT','portal.style.adminFeature.stylesheet_management.name',0,'jsp/admin/style/ManageStyleSheets.jsp','portal.style.adminFeature.stylesheet_management.description',1,NULL,'STYLE','images/admin/skin/features/manage_stylesheets.png',NULL,3, 0);
-INSERT INTO core_admin_right VALUES ('CORE_STYLES_MANAGEMENT','portal.style.adminFeature.styles_management.name',0,'jsp/admin/style/ManageStyles.jsp','portal.style.adminFeature.styles_management.description',1,NULL,'STYLE','images/admin/skin/features/manage_styles.png',NULL,4, 0);
-INSERT INTO core_admin_right VALUES ('CORE_USERS_MANAGEMENT','portal.users.adminFeature.users_management.name',2,'jsp/admin/user/ManageUsers.jsp','portal.users.adminFeature.users_management.description',1,'','MANAGERS','images/admin/skin/features/manage_users.png',NULL,1, 0);
-INSERT INTO core_admin_right VALUES ('CORE_FEATURES_MANAGEMENT','portal.admin.adminFeature.features_management.name',0,NULL,'portal.admin.adminFeature.features_management.description',0,NULL,'SYSTEM','images/admin/skin/features/manage_features.png',NULL,6, 0);
-INSERT INTO core_admin_right VALUES ('CORE_RBAC_MANAGEMENT','portal.rbac.adminFeature.rbac_management.name',0,'jsp/admin/rbac/ManageRoles.jsp','portal.rbac.adminFeature.rbac_management.description',0,'','MANAGERS','images/admin/skin/features/manage_rbac.png',NULL,2, 0);
-INSERT INTO core_admin_right VALUES ('CORE_DAEMONS_MANAGEMENT','portal.system.adminFeature.daemons_management.name',0,'jsp/admin/system/ManageDaemons.jsp','portal.system.adminFeature.daemons_management.description',0,NULL,'SYSTEM',NULL,NULL,7, 0);
-INSERT INTO core_admin_right VALUES ('CORE_WORKGROUPS_MANAGEMENT','portal.workgroup.adminFeature.workgroups_management.name',2,'jsp/admin/workgroup/ManageWorkgroups.jsp','portal.workgroup.adminFeature.workgroups_management.description',0,NULL,'MANAGERS','images/admin/skin/features/manage_workgroups.png',NULL,3, 0);
-INSERT INTO core_admin_right VALUES ('CORE_ROLES_MANAGEMENT','portal.role.adminFeature.roles_management.name',2,'jsp/admin/role/ManagePageRole.jsp','portal.role.adminFeature.roles_management.description',0,NULL,'USERS','images/admin/skin/features/manage_roles.png',NULL,1, 0);
-INSERT INTO core_admin_right VALUES ('CORE_MAILINGLISTS_MANAGEMENT','portal.mailinglist.adminFeature.mailinglists_management.name',2,'jsp/admin/mailinglist/ManageMailingLists.jsp','portal.mailinglist.adminFeature.mailinglists_management.description',0,NULL,'MANAGERS','images/admin/skin/features/manage_mailinglists.png',NULL,4, 0);
-INSERT INTO core_admin_right VALUES ('CORE_LEVEL_RIGHT_MANAGEMENT','portal.users.adminFeature.level_right_management.name',2,NULL,'portal.users.adminFeature.level_right_management.description',0,NULL,'MANAGERS','images/admin/skin/features/manage_rights_levels.png',NULL,5, 0);
-INSERT INTO core_admin_right VALUES ('CORE_LINK_SERVICE_MANAGEMENT','portal.insert.adminFeature.linkService_management.name',2,NULL,'portal.insert.adminFeature.linkService_management.description',0,NULL,NULL,NULL,NULL,1, 0);
-INSERT INTO core_admin_right VALUES ('CORE_RIGHT_MANAGEMENT', 'portal.users.adminFeature.right_management.name', 0, 'jsp/admin/features/ManageRights.jsp', 'portal.users.adminFeature.right_management.description', 0, NULL, 'MANAGERS', 'images/admin/skin/features/manage_rights_levels.png', NULL, 5, 0);
-INSERT INTO core_admin_right VALUES ('CORE_ADMINDASHBOARD_MANAGEMENT', 'portal.admindashboard.adminFeature.right_management.name', 0, NULL, 'portal.admindashboard.adminFeature.right_management.description', 0, NULL, 'SYSTEM', 'images/admin/skin/features/manage_admindashboards.png', NULL, 8, 0);
-INSERT INTO core_admin_right VALUES ('CORE_DASHBOARD_MANAGEMENT', 'portal.dashboard.adminFeature.dashboard_management.name', 0, NULL, 'portal.dashboard.adminFeature.dashboard_management.description', 0, NULL, 'SYSTEM', 'images/admin/skin/features/manage_dashboards.png', NULL, 9, 0);
-INSERT INTO core_admin_right VALUES ('CORE_XSL_EXPORT_MANAGEMENT', 'portal.xsl.adminFeature.xsl_export_management.name', 2, NULL, 'portal.xsl.adminFeature.xsl_export_management.description', 1, NULL, 'SYSTEM', NULL, NULL, 10, 0);
-INSERT INTO core_admin_right VALUES ('CORE_TEMPLATES_AUTO_INCLUDES_MANAGEMENT', 'portal.templates.adminFeature.ManageAutoIncludes.name', 1, NULL,'portal.templates.adminFeature.ManageAutoIncludes.description',1,NULL,'STYLE','images/admin/skin/features/manage_templates.png',NULL,4, 0);
-INSERT INTO core_admin_right VALUES ('CORE_EDITORS_MANAGEMENT', 'portal.admindashboard.editorManagement.right.name', 2, NULL, 'portal.admindashboard.editorManagement.right.description', 1, NULL, 'SYSTEM', NULL, NULL, 10, 0);
+INSERT INTO core_admin_right VALUES ('CORE_ADMIN_SITE', 'portal.site.adminFeature.admin_site.name', 2, 'jsp/admin/site/AdminSite.jsp', 'portal.site.adminFeature.admin_site.description', 1, NULL, 'SITE', 'ti ti-home-edit', 'jsp/admin/documentation/AdminDocumentation.jsp?doc=admin-site', 1, 0);
+INSERT INTO core_admin_right VALUES ('CORE_ADMINDASHBOARD_MANAGEMENT', 'portal.admindashboard.adminFeature.right_management.name', 0, NULL, 'portal.admindashboard.adminFeature.right_management.description', 0, '', 'SYSTEM', 'ti ti-dashboard', NULL, 8, 0);
+INSERT INTO core_admin_right VALUES ('CORE_CACHE_MANAGEMENT', 'portal.system.adminFeature.cache_management.name', 0, 'jsp/admin/system/ManageCaches.jsp', 'portal.system.adminFeature.cache_management.description', 1, '', 'SYSTEM', 'ti ti-clock-edit', NULL, 1, 0);
+INSERT INTO core_admin_right VALUES ('CORE_DAEMONS_MANAGEMENT', 'portal.system.adminFeature.daemons_management.name', 0, 'jsp/admin/system/ManageDaemons.jsp', 'portal.system.adminFeature.daemons_management.description', 0, '', 'SYSTEM', 'ti ti-timeline-event', NULL, 7, 0);
+INSERT INTO core_admin_right VALUES ('CORE_DASHBOARD_MANAGEMENT', 'portal.dashboard.adminFeature.dashboard_management.name', 0, NULL, 'portal.dashboard.adminFeature.dashboard_management.description', 0, '', 'SYSTEM', 'ti ti-layout-dashboard', NULL, 9, 0);
+INSERT INTO core_admin_right VALUES ('CORE_EDITORS_MANAGEMENT', 'portal.admindashboard.editorManagement.right.name', 2, NULL, 'portal.admindashboard.editorManagement.right.description', 1, '', 'SYSTEM', 'ti ti-tools', NULL, 10, 0);
+INSERT INTO core_admin_right VALUES ('CORE_FEATURES_MANAGEMENT', 'portal.admin.adminFeature.features_management.name', 0, NULL, 'portal.admin.adminFeature.features_management.description', 0, '', 'SYSTEM', 'ti ti-apps', NULL, 6, 0);
+INSERT INTO core_admin_right VALUES ('CORE_LEVEL_RIGHT_MANAGEMENT', 'portal.users.adminFeature.level_right_management.name', 2, NULL, 'portal.users.adminFeature.level_right_management.description', 0, '', 'MANAGERS', 'ti ti-list-detail', NULL, 4, 0);
+INSERT INTO core_admin_right VALUES ('CORE_LINK_SERVICE_MANAGEMENT', 'portal.insert.adminFeature.linkService_management.name', 2, NULL, 'portal.insert.adminFeature.linkService_management.description', 0, NULL, NULL, 'ti ti-link', NULL, 1, 0);
+INSERT INTO core_admin_right VALUES ('CORE_LOGS_VISUALISATION', 'portal.system.adminFeature.logs_visualisation.name', 0, 'jsp/admin/system/ManageFilesSystem.jsp', 'portal.system.adminFeature.logs_visualisation.description', 1, '', 'SYSTEM', 'ti ti-list-search', NULL, 4, 0);
+INSERT INTO core_admin_right VALUES ('CORE_MAILINGLISTS_MANAGEMENT', 'portal.mailinglist.adminFeature.mailinglists_management.name', 2, 'jsp/admin/mailinglist/ManageMailingLists.jsp', 'portal.mailinglist.adminFeature.mailinglists_management.description', 0, '', 'MANAGERS', 'ti ti-mail-cog', NULL, 5, 0);
+INSERT INTO core_admin_right VALUES ('CORE_PAGE_TEMPLATE_MANAGEMENT', 'portal.style.adminFeature.page_template_management.name', 0, 'jsp/admin/style/ManagePageTemplates.jsp', 'portal.style.adminFeature.page_template_management.description', 0, '', 'STYLE', 'ti ti-layout-board', NULL, 1, 0);
+INSERT INTO core_admin_right VALUES ('CORE_PLUGINS_MANAGEMENT', 'portal.system.adminFeature.plugins_management.name', 0, 'jsp/admin/system/ManagePlugins.jsp', 'portal.system.adminFeature.plugins_management.description', 1, '', 'SYSTEM', 'ti ti-apps-filled', NULL, 5, 0);
+INSERT INTO core_admin_right VALUES ('CORE_PROPERTIES_MANAGEMENT', 'portal.site.adminFeature.properties_management.name', 2, 'jsp/admin/ManageProperties.jsp', 'portal.site.adminFeature.properties_management.description', 0, NULL, 'SITE', 'ti ti-checklist', 'jsp/admin/documentation/AdminDocumentation.jsp?doc=admin-properties', 2, 0);
+INSERT INTO core_admin_right VALUES ('CORE_RBAC_MANAGEMENT', 'portal.rbac.adminFeature.rbac_management.name', 0, 'jsp/admin/rbac/ManageRoles.jsp', 'portal.rbac.adminFeature.rbac_management.description', 0, '', 'MANAGERS', 'ti ti-user-check', NULL, 1, 0);
+INSERT INTO core_admin_right VALUES ('CORE_RIGHT_MANAGEMENT', 'portal.users.adminFeature.right_management.name', 0, 'jsp/admin/features/ManageRights.jsp', 'portal.users.adminFeature.right_management.description', 0, '', 'MANAGERS', 'ti ti-gavel', NULL, 6, 0);
+INSERT INTO core_admin_right VALUES ('CORE_ROLES_MANAGEMENT', 'portal.role.adminFeature.roles_management.name', 2, 'jsp/admin/role/ManagePageRole.jsp', 'portal.role.adminFeature.roles_management.description', 0, '', 'USERS', 'ti ti-list-check', NULL, 2, 0);
+INSERT INTO core_admin_right VALUES ('CORE_SEARCH_INDEXATION', 'portal.search.adminFeature.indexer.name', 0, 'jsp/admin/search/ManageSearchIndexation.jsp', 'portal.search.adminFeature.indexer.description', 0, '', 'SYSTEM', 'ti ti-settings-search', NULL, 2, 0);
+INSERT INTO core_admin_right VALUES ('CORE_SEARCH_MANAGEMENT', 'portal.search.adminFeature.search_management.name', 0, NULL, 'portal.search.adminFeature.search_management.description', 0, '', 'SYSTEM', 'ti ti-database-search', NULL, 3, 0);
+INSERT INTO core_admin_right VALUES ('CORE_STYLES_MANAGEMENT', 'portal.style.adminFeature.styles_management.name', 0, 'jsp/admin/style/ManageStyles.jsp', 'portal.style.adminFeature.styles_management.description', 1, '', 'STYLE', 'ti ti-brush', NULL, 3, 0);
+INSERT INTO core_admin_right VALUES ('CORE_STYLESHEET_MANAGEMENT', 'portal.style.adminFeature.stylesheet_management.name', 0, 'jsp/admin/style/ManageStyleSheets.jsp', 'portal.style.adminFeature.stylesheet_management.description', 1, '', 'STYLE', 'ti ti-file-code', NULL, 2, 0);
+INSERT INTO core_admin_right VALUES ('CORE_TEMPLATES_AUTO_INCLUDES_MANAGEMENT', 'portal.templates.adminFeature.ManageAutoIncludes.name', 1, NULL, 'portal.templates.adminFeature.ManageAutoIncludes.description', 1, '', 'STYLE', 'ti ti-code-circle-2', NULL, 4, 0);
+INSERT INTO core_admin_right VALUES ('CORE_USERS_MANAGEMENT', 'portal.users.adminFeature.users_management.name', 2, 'jsp/admin/user/ManageUsers.jsp', 'portal.users.adminFeature.users_management.description', 1, '', 'MANAGERS', 'ti ti-users', NULL, 2, 0);
+INSERT INTO core_admin_right VALUES ('CORE_WORKGROUPS_MANAGEMENT', 'portal.workgroup.adminFeature.workgroups_management.name', 2, 'jsp/admin/workgroup/ManageWorkgroups.jsp', 'portal.workgroup.adminFeature.workgroups_management.description', 0, '', 'MANAGERS', 'ti ti-users-group', NULL, 3, 0);
+INSERT INTO core_admin_right VALUES ('CORE_XSL_EXPORT_MANAGEMENT', 'portal.xsl.adminFeature.xsl_export_management.name', 2, NULL, 'portal.xsl.adminFeature.xsl_export_management.description', 1, '', 'SYSTEM', 'ti ti-file-export', NULL, 11, 0);
 
 
 INSERT INTO core_admin_role VALUES ('all_site_manager','Site Manager');
 INSERT INTO core_admin_role VALUES ('super_admin','Super Administrateur');
 
-INSERT INTO core_admin_role_resource VALUES (57,'all_site_manager','PAGE','*','VIEW');
-INSERT INTO core_admin_role_resource VALUES (58,'all_site_manager','PAGE','*','MANAGE');
-INSERT INTO core_admin_role_resource VALUES (77,'super_admin','INSERT_SERVICE','*','*');
-INSERT INTO core_admin_role_resource VALUES (101,'all_site_manager','PORTLET_TYPE','*','*');
-INSERT INTO core_admin_role_resource VALUES (111,'all_site_manager', 'ADMIN_USER', '*', '*');
-INSERT INTO core_admin_role_resource VALUES (137,'all_site_manager', 'SEARCH_SERVICE', '*', '*');
-INSERT INTO core_admin_role_resource VALUES (164,'all_site_manager', 'XSL_EXPORT', '*', '*');
+INSERT INTO core_admin_role_resource(role_key, resource_type, resource_id, permission) VALUES ('all_site_manager','PAGE','*','VIEW');
+INSERT INTO core_admin_role_resource(role_key, resource_type, resource_id, permission) VALUES ('all_site_manager','PAGE','*','MANAGE');
+INSERT INTO core_admin_role_resource(role_key, resource_type, resource_id, permission) VALUES ('super_admin','INSERT_SERVICE','*','*');
+INSERT INTO core_admin_role_resource(role_key, resource_type, resource_id, permission) VALUES ('all_site_manager','PORTLET_TYPE','*','*');
+INSERT INTO core_admin_role_resource(role_key, resource_type, resource_id, permission) VALUES ('all_site_manager', 'ADMIN_USER', '*', '*');
+INSERT INTO core_admin_role_resource(role_key, resource_type, resource_id, permission) VALUES ('all_site_manager', 'SEARCH_SERVICE', '*', '*');
+INSERT INTO core_admin_role_resource(role_key, resource_type, resource_id, permission) VALUES ('all_site_manager', 'XSL_EXPORT', '*', '*');
 
 -- default accounts; password storage will be upgraded on first login
 INSERT INTO core_admin_user (access_code,last_name,first_name,email,status,password,locale,level_user,reset_password,accessibility_mode,password_max_valid_date,account_max_valid_date,nb_alerts_sent,last_login,workgroup_key) VALUES ('admin','Admin','admin','admin@lutece.fr',0,'PLAINTEXT:adminadmin','fr',0,0,0,'1980-01-01 00:00:00',null,0,'1980-01-01 00:00:00','all');
-INSERT INTO core_admin_user (access_code,last_name,first_name,email,status,password,locale,level_user,reset_password,accessibility_mode,password_max_valid_date,account_max_valid_date,nb_alerts_sent,last_login,workgroup_key) VALUES ('lutece','Lutèce','lutece','lutece@lutece.fr',1,'PLAINTEXT:adminadmin','fr',1,0,0,'1980-01-01 00:00:00',null,0,'1980-01-01 00:00:00','all');
+INSERT INTO core_admin_user (access_code,last_name,first_name,email,status,password,locale,level_user,reset_password,accessibility_mode,password_max_valid_date,account_max_valid_date,nb_alerts_sent,last_login,workgroup_key) VALUES ('lutece','Lutece','lutece','lutece@lutece.fr',1,'PLAINTEXT:adminadmin','fr',1,0,0,'1980-01-01 00:00:00',null,0,'1980-01-01 00:00:00','all');
 INSERT INTO core_admin_user (access_code,last_name,first_name,email,status,password,locale,level_user,reset_password,accessibility_mode,password_max_valid_date,account_max_valid_date,nb_alerts_sent,last_login,workgroup_key) VALUES ('redac','redac','redac','redac@lutece.fr',1,'PLAINTEXT:adminadmin','fr',2,0,0,'1980-01-01 00:00:00',null,0,'1980-01-01 00:00:00','all');
 INSERT INTO core_admin_user (access_code,last_name,first_name,email,status,password,locale,level_user,reset_password,accessibility_mode,password_max_valid_date,account_max_valid_date,nb_alerts_sent,last_login,workgroup_key) VALUES ('valid','valid','valid','valid@lutece.fr',1,'PLAINTEXT:adminadmin','fr',3,0,0,'1980-01-01 00:00:00',null,0,'1980-01-01 00:00:00','all');
 
@@ -71,16 +71,14 @@ INSERT INTO core_mode VALUES (0,'Normal','normal/','xml','1.0','text/xml','UTF-8
 INSERT INTO core_mode VALUES (1,'Administration','admin/','xml','1.0','text/xml','UTF-8','yes','yes',null);
 INSERT INTO core_mode VALUES (2,'Wap','wml/','xml','1.0','text/xml','UTF-8','yes','yes',null);
 
-INSERT INTO core_page (id_parent,name,description,date_update,status,page_order,id_template,date_creation,role,code_theme,node_status,image_content,mime_type,meta_keywords,meta_description,id_authorization_node,display_date_update,is_manual_date_update) VALUES (0,'Home','Home Page',now(),1,1,7,now(),'none','default',0,'','application/octet-stream',NULL,NULL,1,0,0);
+INSERT INTO core_page (id_parent,name,description,date_update,status,page_order,id_template,date_creation,role,code_theme,node_status,image_content,mime_type,meta_keywords,meta_description,id_authorization_node,display_date_update,is_manual_date_update) VALUES (0,'Home','Home Page',now(),1,1,1,now(),'none','default',0,'','application/octet-stream',NULL,NULL,1,0,0);
 INSERT INTO core_page (id_parent,name,description,date_update,status,page_order,id_template,date_creation,role,code_theme,node_status,image_content,mime_type,meta_keywords,meta_description,id_authorization_node,display_date_update,is_manual_date_update) VALUES (1,'Page 1','A child page',now(),0,1,2,now(),'none','default',1,NULL,'application/octet-stream',NULL,NULL,1,0,0);
 
-INSERT INTO core_page_template (description,file_name,picture) VALUES ('One column','skin/site/page_template1.html','page_template1.gif');
-INSERT INTO core_page_template (description,file_name,picture) VALUES ('Two columns','skin/site/page_template2.html','page_template2.gif');
-INSERT INTO core_page_template (description,file_name,picture) VALUES ('Three columns','skin/site/page_template3.html','page_template3.gif');
-INSERT INTO core_page_template (description,file_name,picture) VALUES ('1 + 2 columns','skin/site/page_template4.html','page_template4.gif');
-INSERT INTO core_page_template (description,file_name,picture) VALUES ('Two equal columns','skin/site/page_template5.html','page_template5.gif');
-INSERT INTO core_page_template (description,file_name,picture) VALUES ('Three unequal columns','skin/site/page_template6.html','page_template6.gif');
-INSERT INTO core_page_template (description,file_name, picture) VALUES ('Home page', 'skin/site/page_home_demo.html', 'lutece_logo.png');
+INSERT INTO core_page_template VALUES (1, 'Home page', 'skin/site/page_home_demo.html', 'layout-home.svg');
+INSERT INTO core_page_template VALUES (2, 'One column', 'skin/site/page_template1.html', 'layout-one.svg');
+INSERT INTO core_page_template VALUES (3, 'Two columns', 'skin/site/page_template2.html', 'layout-two.svg');
+INSERT INTO core_page_template VALUES (4, '1 + 2 columns', 'skin/site/page_template4.html', 'layout-three.svg');
+INSERT INTO core_page_template VALUES (5, 'Two equal columns', 'skin/site/page_template5.html', 'layout-four.svg');
 
 INSERT INTO core_portal_component VALUES (0,'Portlet');
 INSERT INTO core_portal_component VALUES (1,'Article');
@@ -92,7 +90,7 @@ INSERT INTO core_portal_component VALUES (6,'Site Map');
 INSERT INTO core_portal_component VALUES (7,'Tree View');
 INSERT INTO core_portal_component VALUES (8,'Site Map (Admin mode)');
 
-INSERT INTO core_portlet_type VALUES ('ALIAS_PORTLET','portal.site.portletAlias.name','plugins/alias/CreatePortletAlias.jsp','plugins/alias/ModifyPortletAlias.jsp','fr.paris.lutece.portal.business.portlet.AliasPortletHome','alias','plugins/alias/DoCreatePortletAlias.jsp','/admin/portlet/script_create_portlet.html','/admin/portlet/alias/create_portlet_alias.html','','plugins/alias/DoModifyPortletAlias.jsp','/admin/portlet/script_modify_portlet.html','/admin/portlet/alias/modify_portlet_alias.html','');
+INSERT INTO core_portlet_type VALUES ('ALIAS_PORTLET','portal.site.portletAlias.name','plugins/alias/CreatePortletAlias.jsp','plugins/alias/ModifyPortletAlias.jsp','fr.paris.lutece.portal.business.portlet.AliasPortletHome','alias','plugins/alias/DoCreatePortletAlias.jsp','/admin/portlet/script_create_portlet.html','/admin/portlet/alias/create_portlet_alias.html','','plugins/alias/DoModifyPortletAlias.jsp','/admin/portlet/script_modify_portlet.html','/admin/portlet/alias/modify_portlet_alias.html','','circles-relation');
 
 INSERT INTO core_stylesheet (id_stylesheet, description, file_name, source) VALUES (211, 'Menu Init', 'menu_init.xsl',0x3c3f786d6c2076657273696f6e3d22312e30223f3e0d0a3c78736c3a7374796c6573686565742076657273696f6e3d22312e302220786d6c6e733a78736c3d22687474703a2f2f7777772e77332e6f72672f313939392f58534c2f5472616e73666f726d223e0d0a0d0a3c78736c3a706172616d206e616d653d22736974652d70617468222073656c6563743d22736974652d7061746822202f3e0d0a0d0a3c78736c3a74656d706c617465206d617463683d226d656e752d6c697374223e0d0a3c6272202f3e3c6272202f3e0d0a093c6469762069643d226d656e752d696e6974223e0d0a09093c6469762069643d226d656e752d696e69742d636f6e74656e74223e0d0a2020202020202020202020203c756c2069643d226d656e752d7665727469223e0d0a202020202020202020202020202020203c78736c3a6170706c792d74656d706c617465732073656c6563743d226d656e7522202f3e0d0a2020202020202020202020203c2f756c3e0d0a20202020202020203c2f6469763e0d0a20202020203c2f6469763e0d0a3c2f78736c3a74656d706c6174653e0d0a0d0a0d0a3c78736c3a74656d706c617465206d617463683d226d656e75223e0d0a202020203c78736c3a7661726961626c65206e616d653d22696e646578223e0d0a20202020093c78736c3a6e756d626572206c6576656c3d2273696e676c65222076616c75653d22706f736974696f6e282922202f3e0d0a202020203c2f78736c3a7661726961626c653e0d0a0d0a202020203c78736c3a696620746573743d2224696e646578202667743b2037223e0d0a20202020202020203c6c6920636c6173733d2266697273742d7665727469223e0d0a2020202020202020093c6120687265663d227b24736974652d706174687d3f706167655f69643d7b706167652d69647d22207461726765743d225f746f70223e0d0a2020202020202020202009093c78736c3a76616c75652d6f662073656c6563743d22706167652d6e616d6522202f3e0d0a0920202020202020203c2f613e0d0a2020202009202020203c78736c3a6170706c792d74656d706c617465732073656c6563743d227375626c6576656c2d6d656e752d6c69737422202f3e0d0a20202020202020203c2f6c693e0d0a2020203c2f78736c3a69663e0d0a3c2f78736c3a74656d706c6174653e0d0a0d0a3c78736c3a74656d706c617465206d617463683d227375626c6576656c2d6d656e752d6c69737422203e0d0a093c756c3e0d0a20202020093c6c6920636c6173733d226c6173742d7665727469223e0d0a090920093c78736c3a6170706c792d74656d706c617465732073656c6563743d227375626c6576656c2d6d656e7522202f3e0d0a2009202020203c2f6c693e0d0a202020203c2f756c3e0d0a3c2f78736c3a74656d706c6174653e0d0a0d0a3c78736c3a74656d706c617465206d617463683d227375626c6576656c2d6d656e75223e0d0a2020203c78736c3a7661726961626c65206e616d653d22696e6465785f736f75735f6d656e75223e0d0a2020202020202020203c78736c3a6e756d626572206c6576656c3d2273696e676c65222076616c75653d22706f736974696f6e282922202f3e0d0a2020203c2f78736c3a7661726961626c653e0d0a0d0a2020203c6120687265663d227b24736974652d706174687d3f706167655f69643d7b706167652d69647d22207461726765743d225f746f70223e0d0a09093c7370616e3e3c78736c3a76616c75652d6f662073656c6563743d22706167652d6e616d6522202f3e3c2f7370616e3e0d0a2020203c2f613e0d0a3c2f78736c3a74656d706c6174653e0d0a0d0a3c2f78736c3a7374796c6573686565743e0d0a);
 INSERT INTO core_stylesheet (id_stylesheet, description, file_name, source) VALUES (213, 'Main Menu', 'menu_main.xsl',0x3c3f786d6c2076657273696f6e3d22312e30223f3e0d0a3c78736c3a7374796c6573686565742076657273696f6e3d22312e302220786d6c6e733a78736c3d22687474703a2f2f7777772e77332e6f72672f313939392f58534c2f5472616e73666f726d223e0d0a202020203c78736c3a706172616d206e616d653d22736974652d70617468222073656c6563743d22736974652d7061746822202f3e0d0a202020203c78736c3a74656d706c617465206d617463683d226d656e752d6c697374223e0d0a20202020202020203c78736c3a6170706c792d74656d706c617465732073656c6563743d226d656e7522202f3e0d0a202020203c2f78736c3a74656d706c6174653e0d0a202020203c78736c3a74656d706c617465206d617463683d226d656e75223e0d0a20202020202020203c6c6920636c6173733d226e61762d6974656d223e0d0a2020202020202020202020203c6120687265663d227b24736974652d706174687d3f706167655f69643d7b706167652d69647d2220636c6173733d226e61762d6c696e6b22207461726765743d225f746f70223e0d0a202020202020202020202020202020203c78736c3a76616c75652d6f662073656c6563743d22706167652d6e616d6522202f3e0d0a2020202020202020202020203c2f613e0d0a20202020202020203c2f6c693e0d0a202020203c2f78736c3a74656d706c6174653e0d0a3c2f78736c3a7374796c6573686565743e);
@@ -161,7 +159,7 @@ INSERT INTO core_datastore VALUES ('core.advanced_parameters.default_user_level'
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.default_user_notification', '1');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.default_user_language', 'fr');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.default_user_status', '0');
-INSERT INTO core_datastore VALUES ('core.advanced_parameters.email_pattern', /*E*/'^[\\w_.\\-!\\#\\$\\%\\&''\\*\\+\\/\\=\\?\\^\\\`\\}\\{\\|\\~]+@[\\w_.\\-]+\\.[\\w]+$');
+INSERT INTO core_datastore VALUES ('core.advanced_parameters.email_pattern', /*E*/'^[\\w_.\\-!\\#\\$\\%\\&''\\*\\+\\/\\=\\?\\^\\\\\}\\{\\|\\~]+@[\\w_.\\-]+\\.[\\w]+$');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.email_pattern_verify_by', '');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.force_change_password_reinit', 'false');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.password_minimum_length', '8');
@@ -179,21 +177,21 @@ INSERT INTO core_datastore VALUES ('core.advanced_parameters.time_between_alerts
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.access_failures_max', '3');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.access_failures_interval', '10');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.expired_alert_mail_sender', 'lutece@nowhere.com');
-INSERT INTO core_datastore VALUES ('core.advanced_parameters.expired_alert_mail_subject', 'Votre compte a expiré');
+INSERT INTO core_datastore VALUES ('core.advanced_parameters.expired_alert_mail_subject', 'Votre compte a expir├⌐');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.first_alert_mail_sender', 'lutece@nowhere.com');
-INSERT INTO core_datastore VALUES ('core.advanced_parameters.first_alert_mail_subject', 'Votre compte va bientôt expirer');
+INSERT INTO core_datastore VALUES ('core.advanced_parameters.first_alert_mail_subject', 'Votre compte va bient├┤t expirer');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.other_alert_mail_sender', 'lutece@nowhere.com');
-INSERT INTO core_datastore VALUES ('core.advanced_parameters.other_alert_mail_subject', 'Votre compte va bientôt expirer');
+INSERT INTO core_datastore VALUES ('core.advanced_parameters.other_alert_mail_subject', 'Votre compte va bient├┤t expirer');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.account_reactivated_mail_sender', 'lutece@nowhere.com');
-INSERT INTO core_datastore VALUES ('core.advanced_parameters.account_reactivated_mail_subject', 'Votre compte a bien été réactivé');
+INSERT INTO core_datastore VALUES ('core.advanced_parameters.account_reactivated_mail_subject', 'Votre compte a bien ├⌐t├⌐ r├⌐activ├⌐');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.access_failures_captcha', '1');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.notify_user_password_expired', '');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.password_expired_mail_sender', 'lutece@nowhere.com');
-INSERT INTO core_datastore VALUES ('core.advanced_parameters.password_expired_mail_subject', 'Votre mot de passe a expiré');
+INSERT INTO core_datastore VALUES ('core.advanced_parameters.password_expired_mail_subject', 'Votre mot de passe a expir├⌐');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.reset_token_validity', '60');
 INSERT INTO core_datastore VALUES ('core.advanced_parameters.lock_reset_token_to_session', 'false');
 INSERT INTO core_datastore VALUES ('core.backOffice.defaultEditor', 'tinymce');
-INSERT INTO core_datastore VALUES ('core.frontOffice.defaultEditor', 'markitupbbcode');
+INSERT INTO core_datastore VALUES ('core.frontOffice.defaultEditor', 'sceeditor');
 INSERT INTO core_datastore VALUES ('core_banned_domain_names', 'yopmail.com');
 
 INSERT INTO core_datastore VALUES ('portal.site.site_property.name', 'LUTECE');
@@ -208,11 +206,20 @@ INSERT INTO core_datastore VALUES ('portal.site.site_property.admin_home_url', '
 INSERT INTO core_datastore VALUES ('portal.site.site_property.popup_credits.textblock', '&lt;credits text&gt;');
 INSERT INTO core_datastore VALUES ('portal.site.site_property.popup_legal_info.copyright.textblock', '&lt;copyright text&gt;');
 INSERT INTO core_datastore VALUES ('portal.site.site_property.popup_legal_info.privacy.textblock', '&lt;privacy text&gt;');
-INSERT INTO core_datastore VALUES ('portal.site.site_property.logo_url', 'images/logo-header-icon.png');
+INSERT INTO core_datastore VALUES ('portal.site.site_property.logo_url', 'themes/admin/shared/images/logo-header-icon.svg');
 INSERT INTO core_datastore VALUES ('portal.site.site_property.locale.default', 'fr');
-INSERT INTO core_datastore VALUES ('portal.site.site_property.avatar_default', 'images/admin/skin/unknown.png');
-INSERT INTO core_datastore VALUES ('portal.site.site_property.back_images', '\'images/admin/skin/bg_login1.svg\' , \'images/admin/skin/bg_login2.svg\' , \'images/admin/skin/bg_login3.svg\' , \'images/admin/skin/bg_login4.svg\'');
+INSERT INTO core_datastore VALUES ('portal.site.site_property.avatar_default', 'themes/admin/shared/unknown.svg');
 INSERT INTO core_datastore VALUES ('portal.site.site_property.portlet.title.maxlength', '75');
+INSERT INTO core_datastore VALUES ('portal.site.site_property.back_images', 'themes/admin/tabler/images/bg_login1.svg, themes/admin/tabler/images/bg_login2.svg');
+INSERT INTO core_datastore VALUES ('portal.site.site_property.bo.showXs.checkbox', '1');
+INSERT INTO core_datastore VALUES ('portal.site.site_property.bo.showXsWarning.checkbox', '0');
+INSERT INTO core_datastore VALUES ('portal.site.site_property.login.image', '');
+INSERT INTO core_datastore VALUES ('portal.site.site_property.layout.menu.checkbox', '0');
+INSERT INTO core_datastore VALUES ('portal.site.site_property.layout.darkmode.checkbox', '0');
+INSERT INTO core_datastore VALUES ('portal.site.site_property.layout.readmode.checkbox', '0');
+INSERT INTO core_datastore VALUES ('portal.site.site_property.layout.user.readmode.show.checkbox', '0');
+INSERT INTO core_datastore VALUES ('portal.site.site_property.layout.user.darkmode.show.checkbox', '1');
+INSERT INTO core_datastore VALUES ('portal.site.site_property.layout.user.menumode.show.checkbox', '1');
 
 INSERT INTO core_search_parameter (parameter_key, parameter_value) VALUES ('type_filter', 'none');
 INSERT INTO core_search_parameter (parameter_key, parameter_value) VALUES ('default_operator', 'OR');
@@ -226,16 +233,17 @@ INSERT INTO core_admin_user_anonymize_field (field_name, anonymize) VALUES ('las
 INSERT INTO core_admin_user_anonymize_field (field_name, anonymize) VALUES ('first_name', 1);
 INSERT INTO core_admin_user_anonymize_field (field_name, anonymize) VALUES ('email', 1);
 
-INSERT INTO core_template VALUES ('core_first_alert_mail', 'Bonjour ${first_name} ! Votre compte utilisateur arrive à expiration. Pour prolonger sa validité, veuillez <a href="${url}">cliquer ici</a>.</br>Si vous ne le faites pas avant le ${date_valid}, il sera désactivé.');
-INSERT INTO core_template VALUES ('core_expiration_mail', 'Bonjour ${first_name} ! Votre compte a expiré. Vous ne pourrez plus vous connecter avec, et les données vous concernant ont été anonymisées');
-INSERT INTO core_template VALUES ('core_other_alert_mail', 'Bonjour ${first_name} ! Votre compte utilisateur arrive à expiration. Pour prolonger sa validité, veuillez <a href="${url}">cliquer ici</a>.</br>Si vous ne le faites pas avant le ${date_valid}, il sera désactivé.');
-INSERT INTO core_template VALUES ('core_account_reactivated_mail', 'Bonjour ${first_name} ! Votre compte utilisateur a bien été réactivé. Il est désormais valable jusqu''au ${date_valid}.');
-INSERT INTO core_template VALUES ('core_password_expired', 'Bonjour ! Votre mot de passe a expiré. Lors de votre prochaine connexion, vous pourrez le changer.');
+INSERT INTO core_template VALUES ('core_first_alert_mail', 'Bonjour ${first_name} ! Votre compte utilisateur arrive ├á expiration. Pour prolonger sa validit├⌐, veuillez <a href="${url}">cliquer ici</a>.</br>Si vous ne le faites pas avant le ${date_valid}, il sera d├⌐sactiv├⌐.');
+INSERT INTO core_template VALUES ('core_expiration_mail', 'Bonjour ${first_name} ! Votre compte a expir├⌐. Vous ne pourrez plus vous connecter avec, et les donn├⌐es vous concernant ont ├⌐t├⌐ anonymis├⌐es');
+INSERT INTO core_template VALUES ('core_other_alert_mail', 'Bonjour ${first_name} ! Votre compte utilisateur arrive ├á expiration. Pour prolonger sa validit├⌐, veuillez <a href="${url}">cliquer ici</a>.</br>Si vous ne le faites pas avant le ${date_valid}, il sera d├⌐sactiv├⌐.');
+INSERT INTO core_template VALUES ('core_account_reactivated_mail', 'Bonjour ${first_name} ! Votre compte utilisateur a bien ├⌐t├⌐ r├⌐activ├⌐. Il est d├⌐sormais valable jusqu''au ${date_valid}.');
+INSERT INTO core_template VALUES ('core_password_expired', 'Bonjour ! Votre mot de passe a expir├⌐. Lors de votre prochaine connexion, vous pourrez le changer.');
 
 INSERT INTO core_text_editor VALUES ( 'tinymce', 'portal.admindashboard.editors.labelBackTinyMCE', 1 );
+INSERT INTO core_text_editor VALUES ('tinymce5', 'portal.admindashboard.editors.labelBackTinyMCE5', 1);
 INSERT INTO core_text_editor VALUES ( '', 'portal.admindashboard.editors.labelBackNoEditor', 1 );
 INSERT INTO core_text_editor VALUES ( '', 'portal.admindashboard.editors.labelFrontNoEditor', 0 );
-INSERT INTO core_text_editor VALUES ( 'markitupbbcode', 'portal.admindashboard.editors.labelFrontMarkitupBBCode', 0 );
+INSERT INTO core_text_editor VALUES ('sceeditor', 'portal.admindashboard.editors.labelFrontSceEditor', 0);
 
 INSERT INTO core_admin_mailinglist (name,description,workgroup) VALUES( 'admin', 'admin', 'all' );
 INSERT INTO core_admin_mailinglist_filter VALUES( '1', 'all', 'super_admin' );

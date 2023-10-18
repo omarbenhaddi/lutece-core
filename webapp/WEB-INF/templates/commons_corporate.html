@@ -6,6 +6,7 @@
 <#-- Information about this commons file -->
 <#macro commonsFile>commons_corporate.html</#macro>
 <#macro commonsName>Corporate</#macro>
+<#macro commonsPreview>themes/admin/corporate/images/preview.png</#macro>
 <#macro commonsDescription>The Corporate theme is a classic administration dashboard theme designed to be versatile in scaling its navigation and usage to different contexts.</#macro>
 <#-- Path               -->
 <#assign commonsJsPath='js/' /> 
@@ -38,7 +39,7 @@
 <link href="${commonsSharedPath}${commonsJsPath}lib/polipop/css/polipop.default.min.css" rel="stylesheet"><#-- Polipop theme -->
 <!-- <link href="${commonsSharedPath}${commonsCssPath}portal_admin.min.css" rel="stylesheet"><#-- Lutece main admin CSS --> -->
 <!-- Theme <@commonsName /> CSS -->
-<link href="themes/admin/corporate/css/corporate.css" rel="stylesheet">
+<link href="themes/admin/corporate/css/corporate.css?ver=0.0.1" rel="stylesheet">
 <script src="js/admin/jquery/jquery-3.6.0.min.js"></script> <!-- main JQuery file -->
 </#macro>
 <#macro coreAdminJSLinks>
@@ -51,7 +52,7 @@
 <script src="${commonsSharedPath}${commonsJsPath}lib/bootstrap/bootstrap.bundle.min.js"></script><#-- Bootstrap main -->
 <script src="${commonsSharedPath}${commonsJsPath}lib/sortable/Sortable.min.js"></script> <#-- Sortable lib main -->
 <script src="${commonsSharedPath}${commonsJsPath}lib/polipop/polipop.min.js"></script><#-- Polipop main -->
-<script type="module" src="themes/admin/corporate/js/corporate.js"></script>
+<script type="module" src="themes/admin/corporate/js/corporate.js?ver=0.0.1"></script>
 <!-- Theme <@commonsName /> JS -->
 </#macro>
 <#-- Pages -->
@@ -63,6 +64,7 @@
 <#include "${commonsFtlPath}pages/header/adminAccessibilityMode.ftl" />
 <#include "${commonsFtlPath}pages/header/adminSiteColumnOutline.ftl" />
 <#include "${commonsFtlPath}pages/header/adminSiteToolbar.ftl" />
+<#include "${commonsFtlPath}pages/header/adminSkipNav.ftl" />
 <#-- Footer -->
 <#include "${commonsFtlPath}pages/footer/adminFooter.ftl" />
 <#-- Home -->
@@ -78,8 +80,6 @@
 <#-- Error page -->
 <#include "${commonsFtlPath}pages/error/errorPage.ftl" />
 <#-- Components -->
-<#-- Autocomplete component -->
-<#include "${commonsFtlPath}components/autocomplete/autocomplete.ftl" />
 <#-- Pagination components -->
 <#include "${commonsFtlPath}components/pagination/pagination.ftl" />
 <#include "${commonsFtlPath}components/pagination/paginationAdmin.ftl" />
@@ -186,6 +186,12 @@
 <#include "${commonsFtlPath}forms/dropdown/dropdownMenu.ftl" />
 <#include "${commonsFtlPath}forms/dropdown/dropdownList.ftl" />
 <#include "${commonsFtlPath}forms/dropdown/dropdownItem.ftl" />
+<#-- Autocomplete component -->
+<#include "${commonsFtlPath}forms/autocomplete/autocomplete.ftl" />
+<#-- Search components -->
+<#include "${commonsFtlPath}forms/search/searchBox.ftl" />
+<#include "${commonsFtlPath}forms/search/searchInput.ftl" />
+<#include "${commonsFtlPath}forms/search/searchSeparator.ftl" />
 <#-- Offcanvas component -->
 <#include "${commonsFtlPath}components/offcanvas/offcanvas.ftl" />
 <#-- Layout -->
@@ -193,6 +199,7 @@
 <#include "${commonsFtlPath}layout/columns/columns.ftl" />
 <#include "${commonsFtlPath}layout/page/pageContainer.ftl" />
 <#include "${commonsFtlPath}layout/page/pageColumn.ftl" />
+<#include "${commonsFtlPath}layout/page/pageColumnBtn.ftl" />
 <#include "${commonsFtlPath}layout/page/pageHeader.ftl" />
 <#include "${commonsFtlPath}layout/page/pageRow.ftl" />
 <#include "${commonsFtlPath}layout/page/pageWrapper.ftl" />
