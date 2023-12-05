@@ -39,7 +39,6 @@
 <link href="${commonsSharedPath}${commonsJsPath}lib/polipop/css/polipop.default.min.css" rel="stylesheet"><#-- Polipop theme -->
 <link href="${commonsSharedPath}${commonsCssPath}portal_admin.min.css" rel="stylesheet"><#-- Lutece main admin CSS -->
 <!-- Theme <@commonsName /> CSS -->
-<link href="${commonsThemePath}${commonsCssPath}vendor/tabler-vendors.min.css" rel="stylesheet"><#-- Tabler Vendors -->
 <link href="${commonsThemePath}${commonsCssPath}vendor/tabler.min.css" rel="stylesheet"><#-- Tabler main -->
 <link href="${commonsThemePath}${commonsCssPath}portal_admin.min.css" rel="stylesheet"><#-- Lutece main admin CSS -->
 <link href="${commonsThemePath}${commonsCssPath}portal_admin_site.min.css" rel="stylesheet"><#-- Site override admin CSS -Empty by default- -->
@@ -83,8 +82,6 @@
 <#-- Error page -->
 <#include "${commonsFtlPath}pages/error/errorPage.ftl" />
 <#-- Components -->
-<#-- Autocomplete component -->
-<#include "${commonsFtlPath}components/autocomplete/autocomplete.ftl" />
 <#-- Pagination components -->
 <#include "${commonsFtlPath}components/pagination/pagination.ftl" />
 <#include "${commonsFtlPath}components/pagination/paginationAdmin.ftl" />
@@ -167,6 +164,8 @@
 <#-- Password component -->
 <#include "${commonsFtlPath}components/password/passwordComplexity.ftl" />
 <#-- Forms components -->
+<#-- Autocomplete component -->
+<#include "${commonsFtlPath}forms/autocomplete/autocomplete.ftl" />
 <#-- Form components -->
 <#include "${commonsFtlPath}forms/form/tform.ftl" />
 <#include "${commonsFtlPath}forms/form/formGroup.ftl" />
@@ -217,6 +216,7 @@
 <#include "${commonsFtlPath}utilities/empty/empty.ftl" />
 <#include "${commonsFtlPath}utilities/deprecated/deprecatedWarning.ftl" />
 <#-- Javascript -->
+<#include "${commonsFtlPath}javascript/charcounter/charCounter.ftl" />
 <#include "${commonsFtlPath}javascript/scrolltop/scrollTopBtn.ftl" />
 <#include "${commonsFtlPath}javascript/copyelementtoclipboard/copyElementToClipboard.ftl" />
 <#include "${commonsFtlPath}javascript/highlight/codeHighLight.ftl" />

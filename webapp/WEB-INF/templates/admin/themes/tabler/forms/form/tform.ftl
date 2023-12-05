@@ -21,14 +21,23 @@ Parameters:
 <@deprecatedWarning args=deprecated />	
 <#local class = class />
 <#if align!=''><#local class += ' ' + alignmentSettings(align,'') /></#if>
-<#if hide??><#local class += ' ' + displaySettings(hide,'block') /></#if>
+<#if hide??>
+	<#if type == 'inline'>
+		<#local class += ' ' + displaySettings(hide,'inline-flex') />
+	<#else>
+		<#local class += ' ' + displaySettings(hide,'block') />
+	</#if>
+</#if>
 <#if collapsed><#local class += ' collapse' /></#if>
 <#switch type>
 	<#case 'horizontal'>
 		<#local class += ''>
 		<#break>
 	<#case 'inline'>
-		<#local class += ' d-inline-flex'>
+		<#local class += ' d-inline-flex align-items-center'>
+		<#break>
+	<#case 'flex'>
+		<#local class += ' d-flex align-items-center'>
 		<#break>
 	<#default>
 		<#local class += ''>
