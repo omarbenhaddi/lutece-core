@@ -89,7 +89,7 @@ Parameters:
 					</li>
 					<#if userMenuMode?number = 1>
 					<li class="nav-item d-none d-lg-flex">
-						<div class="nav-link" title="#i18n{portal.users.admin_header.homePage}" id="switch-menu" tabindex="0" role="button" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="#i18n{portal.users.admin_header.labelMenuV} / #i18n{portal.users.admin_header.labelMenuH}">
+						<div class="nav-link" title="#i18n{portal.users.admin_header.labelMenuV} / #i18n{portal.users.admin_header.labelMenuH}" id="switch-menu" tabindex="0" role="button" data-bs-toggle="tooltip" data-bs-animation="false" data-bs-placement="bottom" data-bs-original-title="#i18n{portal.users.admin_header.labelMenuV} / #i18n{portal.users.admin_header.labelMenuH}">
 							<i class="ti ti-layout-navbar-collapse menu-rotate-icon"></i><span class="visually-hidden">#i18n{portal.users.admin_header.labelMenuV} / #i18n{portal.users.admin_header.labelMenuH}</span>
 						</div> 
 					</li>
@@ -165,7 +165,7 @@ Parameters:
 					</li>
 					</#if>
 					<li class="nav-item dropdown d-none d-lg-flex">
-						<a href="#" class="nav-link nav-info nav-user-info d-flex lh-1 py-0 px-2 text-reset dropdown-toggle" data-bs-toggle="dropdown" role="button" >
+						<a href="#" class="nav-link nav-info nav-user-info lh-1 py-0 px-2 text-reset dropdown-toggle" data-bs-toggle="dropdown" role="button" >
 							<span class="visually-hidden">#i18n{portal.util.labelMore}</span>
 							<span class="avatar avatar-sm" style="background-image:url(<#if adminAvatar>servlet/plugins/adminavatar/avatar?id_user=${user.userId}<#else>#dskey{portal.site.site_property.avatar_default}</#if>)"></span>
 							<div class="ps-2 pt-3 user-infos">

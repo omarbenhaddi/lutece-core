@@ -17,7 +17,7 @@ Parameters:
 <@div class="position-fixed top-0 w-100 d-block d-md-block d-lg-none m-0 p-0 overflow-hidden" params='style="z-index: 1050"'>
     <@pageColumn class="p-0 m-0">
 	   <@div class="d-flex align-items-center justify-content-center vh-100 ">
-			<@div class="container">
+	   		<@div class="container">
 				<@div class="card shadow-lg rounded-4 p-4 mt-3 mx-2 mw-30">
 					<@div class="card-body p-5 fs-6">
 						<@div class="text-center mb-4">
@@ -37,20 +37,17 @@ Parameters:
 </@div>
 </#if>
 <#if loginLayoutImg?trim !=''>
-	<div class="container container-normal py-4">
+	<div class="container py-4">
 		<div class="row align-items-center g-4">
 			<div class="col-lg">
-				<div class="container-tight">
 </#if>
 <#--  Content  -->
-<@div class="container-tight py-4">
+<#assign containerClass><#if loginLayoutImg?trim =''> container-tight py-4<#else>toto</#if></#assign>
+<@div class="container${containerClass}!''">
 	<@div class="text-center mb-4">
-		<@link href='.' target='_blank'>
+		<@link href='.' target='_blank' class='admin-logo' >
 			<@span class="visually-hidden">#i18n{portal.admin.admin_login.gotoFO} ${site_name!} </@span>
-			<figure>
-				<@img url='${logoUrl}' alt='${site_name!}' title='${site_name!}' class='' params='aria-hidden="true" height="40" style="border: 2px solid white;border-radius:50%;"' />
-				<figcaption class="visually-hidden">#i18n{portal.admin.admin_login.gotoFO} ${site_name!'Lutece'} [ #i18n{portal.site.portal_footer.newWindow} ]</figcaption>
-			</figure>
+			<@img url='${logoUrl}' alt='${site_name!}' class='logo' params='aria-hidden="true" height="24" width="24"' />
 		</@link>
 	</@div>
 	<@div class="card card-md">
@@ -66,7 +63,6 @@ Parameters:
 <p class="text-center text-white"><small>#i18n{portal.site.portal_footer.labelMadeBy} ${version}</small></p>
 <#--  End content -->
 <#if loginLayoutImg !='' && !loginLayoutImg?starts_with('DS') >
-				</div>
 			</div>
 			<div class="col-12 col-lg-6 col-xl-8 d-none d-lg-block">
 				<div class="bg-cover h-100 min-vh-100 w-100" style="background-image: url(${loginLayoutImg});background-size:70%; "></div>
